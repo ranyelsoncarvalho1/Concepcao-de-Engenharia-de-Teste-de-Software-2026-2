@@ -18,7 +18,7 @@ par.js
   npm install --save-dev jest
 ```
 
-5 - Ajustar o package.json: Peça para mudar:
+5 - Ajustar o package.json:
 ```json
   "scripts": {
   "test": "jest"
