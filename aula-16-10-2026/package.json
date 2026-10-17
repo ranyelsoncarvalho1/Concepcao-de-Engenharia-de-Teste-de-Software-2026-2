@@ -1,0 +1,15 @@
+{
+  "name": "teste-unitario",
+  "version": "1.0.0",
+  "description": "criando testes unitarios",
+  "license": "ISC",
+  "author": "Ranyelson",
+  "type": "commonjs",
+  "main": "par.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
