@@ -16,7 +16,7 @@ describe('Testes de integração da API de usuários', () => {
         expect(Array.isArray(resposta.body)).toBe(true);
     });
 
-    /* test('Deve criar um usuário - POST /usuarios', async () => {
+     test('Deve criar um usuário - POST /usuarios', async () => {
         const novoUsuario = {
             nome: 'Carlos',
             email: 'carlos@email.com'
@@ -33,9 +33,9 @@ describe('Testes de integração da API de usuários', () => {
         expect(resposta.body).toHaveProperty('id');
 
         usuarioId = resposta.body.id;
-    }); */
+    });
 
-    /* test('Deve atualizar completamente um usuário - PUT /usuarios/:id', async () => {
+     test('Deve atualizar completamente um usuário - PUT /usuarios/:id', async () => {
         const usuarioAtualizado = {
             nome: 'Carlos Silva',
             email: 'carlos.silva@email.com'
@@ -48,9 +48,9 @@ describe('Testes de integração da API de usuários', () => {
         console.log(resposta.body);
         expect(resposta.status).toBe(200);
         expect(resposta.body).toHaveProperty('mensagem', 'Usuário atualizado');
-    }); */
+    });
 
-    /* test('Deve atualizar parcialmente um usuário - PATCH /usuarios/:id', async () => {
+     test('Deve atualizar parcialmente um usuário - PATCH /usuarios/:id', async () => {
         const atualizacaoParcial = {
             nome: 'Carlos Atualizado'
         };
@@ -61,15 +61,15 @@ describe('Testes de integração da API de usuários', () => {
         console.log(resposta.body);
         expect(resposta.status).toBe(200);
         expect(resposta.body).toHaveProperty('mensagem', 'Usuário atualizado parcialmente');
-    }); */
+    }); 
 
-    /* test('Deve remover um usuário - DELETE /usuarios/:id', async () => {
+     test('Deve remover um usuário - DELETE /usuarios/:id', async () => {
         const resposta = await request(app)
             .delete(`/usuarios/${usuarioId}`);
         console.log(resposta.body);
         expect(resposta.status).toBe(200);
         expect(resposta.body).toHaveProperty('mensagem', 'Usuário removido');
-    }); */
+    }); 
 
 });
 
